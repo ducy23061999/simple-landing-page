@@ -10,14 +10,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">     
         <link rel="stylesheet" href="./css/fontello.css">   
-        <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+        <link rel="stylesheet" href="./css/loader.css"/>
+        <link rel="stylesheet" href="./style.css">
     </head>
-    <body >
+    <body>
         
+       <div class="overlay" id="overlay">
+            <div class="pace  pace-inactive">
+                <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+                    <div class="pace-progress-inner"></div>
+                </div>
+                <div class="pace-activity"></div>
+            </div>
+       </div>
+
         <header class="background">
             <nav class="navbar">
                 <div style="margin-left: 10%">
@@ -25,14 +37,15 @@
                 </div>
     
                 <ul class="menu">
-                    <li><a>About</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Tesimoials</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Our Team</a></li>
-                    <li><a>Contact us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Portfolio</a></li>
+                    <li><a href="#testimonials">Tesimoials</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#news">Blog</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
+
                 <div class="wrapper-menu">
                     <div class="line-menu"></div>
                     <div class="line-menu"></div>
@@ -41,15 +54,15 @@
             </nav>
             <div class="banner">
                 <ul class="menu-responsive">
-                    <li><a>About</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Tesimoials</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Our Team</a></li>
-                    <li><a>Contact us</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Portfolio</a></li>
+                    <li><a href="#testimonials">Tesimoials</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#news">Blog</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
-                <h1 class="banner__title">Clean Slick Pixel Perfect</h1>
+                <h1 class="banner__title">Clean<span class="header-dot"></span>Slick<span class="header-dot"></span>Pixel Perfect</h1>
                 <p class="banner__desc">lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!</p>
                 <div>
                     <button class="btn btn-learn">Learn more</button>
@@ -57,7 +70,7 @@
                 </div>
             </div>
         </header>
-        <section class="s-about">
+        <section class="s-about" id="about">
             <h1>About</h1> 
             <p class="contain-text s-about__text">
                 It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.
@@ -136,7 +149,7 @@
             </div>
             
         </section>
-        <section class="s-projects">
+        <section class="s-projects" id="project">
             <h1>Project</h1> 
             <p>You'll love our work. Check it out!</p>
             <div class="horimage clearfix">
@@ -147,7 +160,7 @@
             </div>
         </section>
         
-        <section class="s-testimonials">
+        <section class="s-testimonials" id="testimonials">
             <h1 class="--white-text">Testimonials</h1>
             <div class="slideshow">
                 <div class="carousel-cell">
@@ -199,7 +212,7 @@
                 </div> <!-- End slideshow__item -->
             </div>
         </section>
-        <section class="s-services">
+        <section class="s-services" id="services">
             <h1>Services</h1>
             <p>In order to help you grow your business, our carefully selected experts can advise you in in the following areas:</p>
             <div class="container">
@@ -222,7 +235,7 @@
                </div>
             </div>
         </section>
-        <section class="s-news">
+        <section class="s-news" id="news">
             <h1>Latest News</h1>
             <p>If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to loose!</p>
             <div style="margin: 0 auto;">
@@ -266,7 +279,7 @@
                 </div>
             </div>
         </section>
-        <section class="s-team">
+        <section class="s-team" id="team">
             <div class="container">
                 <div class="row counter-contain">
                     <div class="col-4">
@@ -291,7 +304,7 @@
                     </div>
                 </div>
             </div>
-            <section class="s-teamcontainer">
+            <section class="s-teamcontainer" id="teamcontainer">
                 <h1>Team</h1>
                 <p>Meet the people that are going to take your business to the next level.</p>
                 <div class="container">
@@ -354,7 +367,7 @@
             </section>
            
         </section>
-        <section class="s-contact">
+        <section class="s-contact" id="contact">
             <h1>Contact us</h1>
             <div class="contact-content">
                <div class="container">
@@ -417,7 +430,7 @@
                         <div class="col-12">
                             <div class="box-input">
                                 <label>Your Message</label>
-                                <textarea cols="40" rows="40" aria-invalid="false"></textarea>
+                                <textarea cols="40" rows="40" aria-invalid="false" style="resize: none;"></textarea>
                             </div>
                         </div>
                     </div>  
@@ -437,28 +450,28 @@
                     <div class="col-3 footer">
                         <h2>PRODUCTS</h2>
                         <ul class="list-links">
-                            <li>Our work</li>
-                            <li>Club</li>
-                            <li>News</li>
-                            <li>Announcement</li>
+                            <li><a>Our work</a></li>
+                            <li><a>Club</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Announcement</a></li>
                         </ul>
                     </div>
                     <div class="col-3 footer">
                         <h2>INFORMATION</h2>
                         <ul class="list-links">
-                            <li>Pricing</li>
-                            <li>Terms</li>
-                            <li>Affiliates</li>
-                            <li>Blog</li>
+                            <li><a>Pricing</a></li>
+                            <li><a>Terms</a></li>
+                            <li><a>Affiliates</a></li>
+                            <li><a>Blog</a></li>
                         </ul>
                     </div>
                     <div class="col-3 footer">
                         <h2>SUPPORT</h2>
                         <ul class="list-links">
-                            <li>Documentation</li>
-                            <li>FAQs</li>
-                            <li>Forums</li>
-                            <li>Contact</li>
+                            <li><a>Documentation</a></li>
+                            <li><a>FAQs</a></li>
+                            <li><a>Forums</a></li>
+                            <li><a>Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-3">

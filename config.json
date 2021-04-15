@@ -25,12 +25,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "7bf14281af5633a597f85b061ef1cfb9",
-      "css": "angle-right",
-      "code": 61701,
-      "src": "fontawesome"
-    },
-    {
       "uid": "f3f90c8c89795da30f7444634476ea4f",
       "css": "angle-left",
       "code": 61700,
@@ -89,6 +83,18 @@
       "css": "twitter",
       "code": 62217,
       "src": "entypo"
+    },
+    {
+      "uid": "94089b37297572e936b0943bcfa041d3",
+      "css": "angle-circled-right",
+      "code": 61752,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7bf14281af5633a597f85b061ef1cfb9",
+      "css": "angle-right",
+      "code": 61701,
+      "src": "fontawesome"
     }
   ]
 }
