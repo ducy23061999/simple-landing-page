@@ -206,8 +206,9 @@ ul.menu li a:hover {
 }
 
 .banner {
-   
-}
+   margin-top: 200px;
+   margin-bottom: 20px;
+}   
 .banner__title {
     text-align: center;
     color: white;
@@ -792,28 +793,38 @@ a .icon-angle-right {
     line-height: 20px;
     font-size: 14px;
 }
-.member_social > a {
-    font-size: 22px;
+.member_social div {
+    border-radius: 50%;
+    border: 1px solid var(--red);
+    margin: 0 4px;
+}
+.member_social div a {
     justify-content: flex-start;
     /* font-weight: 200; */
     cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
 }
-.member_social > a::before {
+
+.member_social div a::before {
    font-weight: 100;
 }
-.--red-text > a{
+.--red-text div a{
     color: rgb(241, 139, 109);
 }
 
-.--yellow-text > a{
+.--yellow-text div a{
     color: var(--yellow);
 }
 
-.--violet-text > a{
+.--violet-text div a{
     color: var(--violet);
 }
 
-.--grey-text > a{
+.--grey-text div a{
     color: var(--light-grey)
 }
 .s-contact {

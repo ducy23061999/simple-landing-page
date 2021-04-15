@@ -49,6 +49,7 @@ $(window).scroll(function() {
     }
   }
 })
+
 Pace.on('hide', function(){
   $('#overlay').addClass("pace-inactive")
 })
