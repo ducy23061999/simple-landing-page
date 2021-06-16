@@ -311,6 +311,15 @@ ul.menu li a:hover {
     padding-top: 30px;
     margin-bottom: 0px;
     font-family: poppins;
+    scroll-margin-top: 6em;
+}
+
+[class*="s-"] > h1::before {
+    display: block; 
+    content: " "; 
+    height: 300px;      /* Give height of your fixed element */
+    margin-bottom: -300px;/* Give negative margin of your fixed element */    
+    visibility: hidden;
 }
 
 [class*="s-"] > p {
@@ -1117,6 +1126,7 @@ ul.list-links .icon {
         margin-bottom: 50px;
         margin-left: 10%;
         margin-right: 10%;
+        
     }
     .member__info  .row {
         display: flex;
