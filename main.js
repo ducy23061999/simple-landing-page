@@ -14,6 +14,7 @@ $(document).ready(function () {
 
   wrapperMenu.addEventListener('click', function(){
     $('.menu-responsive').toggleClass('menu-open');
+    $('.wrapper-menu').toggleClass('menu-active');
   })
 
 })
