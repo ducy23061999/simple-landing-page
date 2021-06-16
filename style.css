@@ -1038,6 +1038,7 @@ ul.list-links .icon {
     color: var(--light-grey);
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 .bottom-footer h4 {
     font-weight: normal;
